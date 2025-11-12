@@ -110,7 +110,7 @@ public class SpringDataTpApplication implements CommandLineRunner {
         System.out.println("--------------------------------------------------------------");
 
 
-        System.out.println("📍 Liste des centres EMSI enregistrés :");
+        System.out.println(" Liste des centres EMSI enregistrés :");
         centreRepository.findAll().forEach(c ->
                 System.out.println("- " + c.getNomCentre() + " | Adresse : " + c.getAdresse())
         );
@@ -118,7 +118,7 @@ public class SpringDataTpApplication implements CommandLineRunner {
         System.out.println("--------------------------------------------------------------");
 
 
-        System.out.println("🎓 Liste des étudiants enregistrés :");
+        System.out.println(" Liste des étudiants enregistrés :");
         etudiantRepository.findAll().forEach(e ->
                 System.out.println("- " + e.getPrenom() + " " + e.getNom() +
                         " (" + e.getGenre() + ") | Centre : " + e.getCentre().getNomCentre())
